@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Productos - TecnoFast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Administración - TecnoFast</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Administrar Productos</h1>
+        
+        <!-- Formulario para añadir productos -->
+        <div class="card mb-3">
+            <div class="card-header bg-info text-white">Agregar Nuevo Producto</div>
+            <div class="card-body">
+                <form id="addProductForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre del Producto</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="precio">Precio</label>
+                            <input type="number" class="form-control" id="precio" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen">Imagen del Producto</label>
+                        <input type="file" class="form-control-file" id="imagen" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar Producto</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tabla para listar productos -->
+        <div class="card">
+            <div class="card-header bg-success text-white">Lista de Productos</div>
+            <div class="card-body">
+                <table class="table table-striped" id="productTable">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productList">
+                        <!-- Aquí se agregarán los productos -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar producto -->
+    <div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProductForm">
+                        <input type="hidden" id="editProductId">
+                        <div class="form-group">
+                            <label for="editNombre">Nombre del Producto</label>
+                            <input type="text" class="form-control" id="editNombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editPrecio">Precio</label>
+                            <input type="number" class="form-control" id="editPrecio" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editDescripcion">Descripción</label>
+                            <textarea class="form-control" id="editDescripcion" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="editImagen">Imagen del Producto</label>
+                            <input type="file" class="form-control-file" id="editImagen">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="prueba.js"></script>
+</body>
+</html>

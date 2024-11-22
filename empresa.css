@@ -1,0 +1,258 @@
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #05696B;
+    color: #fff;
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    justify-content: center; /* Centra horizontalmente el logo y el texto */
+}
+
+header .logo {
+    max-height: 60px; /* Ajusta según el tamaño de tu logo */
+    width: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Ajusta el tamaño del texto del encabezado */
+    color: #fff;
+    margin-left: 15px; /* Espacio entre el logo y el nombre */
+}
+
+header nav {
+    margin-top: 10px; /* Espacio entre el título y el menú de navegación */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con opacidad en el hover */
+}
+
+/* Estilos mejorados para el menú con textura */
+.textured-menu {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Textura ligera */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para realzar el menú */
+}
+
+.textured-menu .nav-link {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave al hover */
+}
+
+.textured-menu .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con opacidad al hacer hover */
+    transform: translateY(-2px); /* Pequeño movimiento hacia arriba en el hover */
+}
+
+/* Otros estilos permanecen igual */
+main h2 {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 20px 0; /* Margen igual arriba y abajo */
+    font-weight: 700; /* Aumenta el grosor del texto */
+    background: linear-gradient(45deg, rgba(255, 105, 180, 1), rgba(255, 165, 0, 1), rgba(0, 255, 255, 1), rgba(255, 215, 0, 1), rgba(255, 69, 0, 1)); /* Colores vivos variados */
+    background-size: 400% 400%; /* Aumenta el tamaño del fondo para un movimiento más suave */
+    -webkit-background-clip: text;
+    background-clip: text; /* Añadir para otros navegadores */
+    -webkit-text-fill-color: transparent;
+    animation: gradientMovement 10s linear infinite; /* Ajusta la duración para un movimiento constante */
+    text-align: center; /* Centra el texto */
+}
+
+main h2::before {
+    content: "• ";
+    color: rgba(254, 192, 7, 1); /* Color del punto */
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    font-size: 1.5rem;
+}
+
+.sobre-empresa {
+    text-align: center; /* Centra el contenido del contenedor principal */
+}
+
+.sobre-empresa p, .sobre-empresa ul {
+    color: #333;
+    font-size: 16px;
+    text-align: justify; /* Justifica el texto */
+    margin: 0 auto;
+    max-width: 800px; /* Limita el ancho del contenido */
+    line-height: 1.6; /* Mejora el interlineado */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.sobre-empresa ul {
+    list-style-type: square;
+    padding-left: 0; /* Elimina el padding izquierdo */
+    display: inline-block; /* Centra la lista */
+    text-align: left; /* Justifica los elementos de la lista */
+}
+
+.sobre-empresa ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #05696B;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Cambiado de fixed a relative */
+    width: 100%;
+}
+
+/* Mapa Contenedor */
+.map-container {
+    margin: 50px auto; /* Margen superior e inferior y centrado */
+    width: 80%; /* Ajusta el tamaño del contenedor del mapa */
+    max-width: 800px; /* Tamaño máximo del contenedor */
+    display: flex;
+    justify-content: center; /* Centra el mapa horizontalmente */
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 10px; /* Añade bordes redondeados al mapa */
+    width: 100%; /* Hace que el mapa se ajuste al contenedor */
+    height: 400px; /* Altura fija para el mapa */
+}
+
+/* Botones flotantes */
+.btn-wsp,
+.btn-tiktok,
+.btn-facebook {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp {
+    background: #0df053;
+    bottom: 60px;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+/* Gmail Button */
+.btn-tiktok {
+    background: #010101;
+    bottom: 130px; /* Colocado por encima del botón de WhatsApp */
+    animation: rotateTiktok 5s infinite;
+}
+
+.btn-tiktok:hover {
+    text-decoration: none;
+    color: #ff0050;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+/* Facebook Button */
+.btn-facebook {
+    background: #3b5998;
+    bottom: 200px; /* Colocado por encima del botón de Gmail */
+    animation: rotateFb 5s infinite;
+}
+
+.btn-facebook:hover {
+    text-decoration: none;
+    color: #3b5998;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}
+
+@keyframes rotateWsp {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+@keyframes rotateTiktok {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateFb {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

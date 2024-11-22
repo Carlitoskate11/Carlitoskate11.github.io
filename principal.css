@@ -1,0 +1,1187 @@
+/* Fondo general con patrón */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-color: #f0f0f0;
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+}
+
+/* Aplicación de la animación al encabezado */
+.custom-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 10px 20px; /* Espaciado interno */
+    background: linear-gradient(45deg, #05696B, #00ffcc, #05696B);
+    background-size: 200% 200%;
+    position: relative; /* Para posicionamiento interno */
+}
+
+.custom-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Asegura alineación vertical */
+    justify-content: center; /* Asegura alineación horizontal */
+    gap: 20px; /* Espaciado uniforme entre íconos */
+}
+
+.custom-nav ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+.custom-nav ul li a {
+    color: rgb(29, 86, 76);
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.custom-nav ul li a:hover {
+    background-color: #00ffcc;
+    color: #05696B;
+}
+
+/* Títulos de secciones mejorados */
+.product-category h2 {
+    font-size: 2.5em;
+    color: #05696B;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-category h2::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #00ffcc;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-category h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* Diferentes colores para secciones */
+#computadoras {
+    background-color: #e6f7ff; 
+    padding: 50px 0;
+}
+
+#laptops {
+    background-color: #f9f2f4; 
+    padding: 50px 0;
+}
+
+#impresoras {
+    background-color: #f0fff0; 
+    padding: 50px 0;
+}
+
+/* Redes sociales - Efecto hover */
+.btn-wsp:hover, .btn-tiktok:hover, .btn-facebook:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para los botones flotantes de redes sociales */
+.btn-wsp, .btn-tiktok, .btn-facebook {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.4s ease;
+    animation: pulse 2s infinite; 
+}
+
+.btn-wsp {
+    background: #0df053;
+    bottom: 60px;
+    animation: rotateWsp 5s infinite; 
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-tiktok {
+    background: #010101;
+    bottom: 130px;
+    animation: rotateTiktok 5s infinite; 
+}
+
+.btn-tiktok:hover {
+    text-decoration: none;
+    color: #ff0050;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-facebook {
+    background: #3b5998;
+    bottom: 200px;
+    animation: rotateFb 5s infinite; 
+}
+
+.btn-facebook:hover {
+    text-decoration: none;
+    color: #3b5998;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}
+
+@keyframes rotateWsp {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+@keyframes rotateTiktok {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateFb {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Botones con efecto de resplandor RGB y fondo blanco */
+.btn-search, .btn-reset, .cart-btn {
+    background: white;
+    color: black; 
+    border: none;
+    padding: 12px 24px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-search:hover, .btn-reset:hover, .cart-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-search::before, .btn-reset::before, .cart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00ffcc, #05696B, #00d4ff, #05696B, #00ffcc, #05696B, #00d4ff, #05696B);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 50s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Contenedor de productos */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+}
+
+/* Tarjetas de productos */
+.product-card {
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 220px; /* Reduce el ancho de la tarjeta para que las imágenes se ajusten mejor */
+    height: auto; /* Ajusta la altura según el contenido */
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px; /* Añade un poco de padding interno para separar el contenido de los bordes */
+    position: relative;
+    z-index: 1;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de las imágenes */
+.product-image img {
+    width: 100%; /* Se ajusta automáticamente al ancho de la tarjeta */
+    height: 200px; /* Altura fija para mantener la uniformidad */
+    object-fit: cover; /* Recorta la imagen si es necesario para que se ajuste al tamaño sin deformarse */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-card h3 {
+    font-size: 1em;
+    color: #05696B;
+    font-weight: bold;
+}
+
+.product-card p {
+    padding: 0 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.cart-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #05696B;
+    background-color: #ffffff; /* Fondo blanco para mayor contraste */
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.cart-btn:hover {
+    background-color: #00ffcc; /* Fondo de hover para contraste */
+    color: #05696B;
+}
+
+/* Modal flex para imágenes y descripción */
+.modal-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-image-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+}
+
+/* Colores para el título del modal */
+#modal-title {
+    font-size: 1.8em;
+    color: #ffffff; /* Color blanco para el título */
+    font-weight: bold;
+    text-align: center;
+}
+
+#modal-image {
+    width: 200px; /* Ajusta el ancho según el tamaño que desees */
+    height: auto; /* Mantén la altura automática para preservar la proporción */
+    object-fit: cover;
+    margin-top: 10px; /* Ajusta el espacio superior según sea necesario */
+}
+
+/* Modal información */
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.price-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea a la derecha */
+    margin-top: auto; /* Empuja el contenedor hacia la parte inferior */
+}
+
+
+/* Precio con color más claro y mayor contraste */
+#modal-price {
+    font-size: 1.5em; /* Aumenta el tamaño del precio */
+    color: #ffcc00; /* Color amarillo claro para mayor contraste */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Colores para el texto de descripción y precio */
+.modal-info p, #modal-description {
+    font-size: 1.1em;
+    color: #f0f0f0; /* Color claro para el texto de descripción */
+}
+
+.modal-info h2 {
+    font-size: 2em;
+    color: #05696B;
+    font-weight: bold;
+}
+
+.modal-info p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.modal-info .price {
+    font-size: 1.5em;
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Fondo del modal con color y animación */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente fuera del modal */
+}
+
+
+/* Estilos adicionales para la animación de movimiento */
+@keyframes aquaMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fondo degradado y colores de texto en el contenido del modal */
+.modal-content {
+    background: linear-gradient(135deg, #05696B, #009688); /* Fondo degradado más oscuro */
+    background-size: 200% 200%;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    max-height: 90vh; /* Controla la altura máxima del modal */
+    margin: 5% auto;
+    color: #ffffff; /* Color del texto para mayor contraste */
+    animation: gradientBackground 15s ease infinite; /* Animación suave de gradiente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+/* Animación de gradiente de fondo */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Botón de cerrar el modal */
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: #00ffcc;
+}
+
+/* Botón "hamburger" */
+.hamburger-btn {
+    background-color: #05696B;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%; 
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger-btn i {
+    font-size: 1.5em; 
+}
+
+.hamburger-btn:hover {
+    background-color: #00ffcc; 
+    color: #05696B;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc; 
+}
+
+.hamburger-btn .hamburger-icon {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-btn .hamburger-icon::before,
+.hamburger-btn .hamburger-icon::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-btn .hamburger-icon::before {
+    transform: translateY(-10px); 
+}
+
+.hamburger-btn .hamburger-icon::after {
+    transform: translateY(10px); 
+}
+
+.hamburger-btn:hover .hamburger-icon,
+.hamburger-btn:hover .hamburger-icon::before,
+.hamburger-btn:hover .hamburger-icon::after {
+    background-color: #05696B; 
+}
+
+/* Menú de categorías */
+#category-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/escheresque.png'); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid #05696B;
+    padding: 8px; 
+    width: 200px; 
+    border-radius: 10px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(0.95); 
+    height: auto; 
+}
+
+#category-menu.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Título de Categorías */
+#category-menu h3 {
+    color: #05696B;
+    text-align: center;
+    font-size: 1.2em; 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px; 
+    margin-bottom: 8px; 
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    line-height: 1.1; 
+}
+
+#category-menu h3::after {
+    content: "";
+    width: 40px;
+    height: 2px; 
+    background-color: #00ffcc;
+    position: absolute;
+    bottom: -6px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mejora en los checkboxes */
+.category-filter label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Diseño personalizado del checkbox */
+.category-filter input[type="checkbox"] {
+    width: 16px; 
+    height: 16px; 
+    border: 1.5px solid #05696B;
+    margin-right: 8px;
+}
+
+/* Cuando está seleccionado */
+.category-filter input[type="checkbox"]:checked {
+    background-color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+/* Agregar icono de check */
+.category-filter input[type="checkbox"]:checked::before {
+    content: '\f00c'; 
+    font-family: 'FontAwesome';
+    color: white;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Cambios de hover en el label */
+.category-filter label:hover {
+    color: #05696B;
+}
+
+/* Estilo de los botones de búsqueda y reinicio */
+.btn-search, .btn-reset {
+    font-size: 0.9em;
+    padding: 8px 12px; 
+    border-radius: 20px; 
+}
+
+.btn-search:hover, .btn-reset:hover {
+    background-color: #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Ajuste de margen y paddings generales */
+.filter-box {
+    margin-bottom: 20px;
+}
+
+.filter-box label {
+    margin-left: 5px;
+}
+
+#no-products-message {
+    color: red;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .product-card {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%; /* Ajusta el ancho de la tarjeta para ocupar todo el ancho disponible en dispositivos móviles */
+        margin: 10px auto; /* Centra las tarjetas */
+    }
+
+    .product-image img {
+        width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        height: auto; /* Mantiene la proporción del banner */
+        object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
+    }
+    
+    /* Ajusta la altura del contenedor del carrusel */
+    #carouselExample {
+        height: auto;
+    }
+}
+
+/* Estilo para el botón de "ver más" con el ícono de ojo */
+.view-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: none; 
+}
+
+.product-card:hover .view-btn {
+    display: block; 
+}
+
+.product-image {
+    position: relative;
+}
+
+.view-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Animación para el fondo del encabezado y pie de página */
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Animación para un gradiente en movimiento */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Aplicación de la animación al pie de página */
+footer {
+    position: relative;
+    background-color: #05696B;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    padding: 20px 0 0; /* Espacio para incluir las olas */
+}
+
+/* Estilo del menú de navegación */
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    color: white;
+    font-size: 1em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #00ffcc;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .social-icons a {
+        font-size: 1.2em;
+        margin: 0 5px;
+    }
+
+    .footer-nav a {
+        font-size: 0.9em;
+        margin: 0 10px;
+    }
+}
+
+/* Estilo para el texto del pie de página */
+footer p {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+}
+
+/* Enlaces en el pie de página */
+footer a {
+    color: #00ffcc; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white; 
+    text-decoration: underline;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0; 
+    }
+}
+
+/* Animación de las olas */
+.wave-container {
+    position: absolute;
+    top: -60px; /* Ajusta según necesites que las olas queden visibles */
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waves {
+    width: 100%;
+    height: 100px;
+}
+
+/* Estilo de los íconos de redes sociales */
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffcc;
+}
+
+/* Ajuste del banner */
+.banner-container {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.banner-container img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+/* Carrito de Compras */
+.cart-container {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(45deg, #e0f7f4, #ffffff); /* Fondo degradado suave */
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 0.3s ease-in-out;
+    border-left: 2px solid #00ffcc; /* Borde en el costado izquierdo */
+}
+
+
+.cart-container.show {
+    display: block;
+    transform: translateX(0);
+}
+
+/* Animación para deslizar el carrito */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Encabezado del carrito */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #05696B, #00ffcc); /* Fondo degradado */
+    color: #ffffff;
+    border-top-right-radius: 10px;
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.close-cart {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-cart:hover {
+    color: #00d4ff;
+}
+
+/* Lista de productos en el carrito */
+.cart-items {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f9f8; /* Fondo claro para cada producto */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.cart-item img:hover {
+    transform: scale(1.1);
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 1em;
+    color: #05696B;
+    font-weight: bold;
+}
+
+.cart-item-details p {
+    margin: 5px 0 0;
+    color: #333;
+}
+
+/* Botón de eliminar */
+.remove-btn {
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+    background: #d35400;
+}
+
+/* Pie del carrito */
+.cart-footer {
+    padding: 20px;
+    background: linear-gradient(45deg, #e0f7f4, #ffffff); /* Fondo degradado suave */
+    text-align: center;
+    border-bottom-right-radius: 10px;
+}
+
+/* Total del carrito */
+#cart-total {
+    font-size: 1.2em;
+    color: #05696B;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botón de checkout */
+.checkout-btn {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #05696B, #00ffcc); /* Fondo degradado con resplandor */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+.checkout-btn:hover::before {
+    left: 100%;
+}
+
+.checkout-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cart-container {
+    display: none;
+    
+}
+
+.cart-container.show {
+    display: block; 
+}
+
+/* Estilo para la barra de patrocinadores */
+.sponsor-bar {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Agrega un margen superior e inferior */
+}
+
+.sponsor-track {
+    display: flex;
+    gap: 30px; /* Espacio entre cada logotipo */
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+/* Esto permite duplicar visualmente el contenido para crear el efecto infinito */
+.sponsor-track::after {
+    content: "";
+    display: flex;
+    gap: 30px;
+}
+
+.sponsor-track img {
+    height: 50px;
+    width: auto;
+    filter: grayscale(100%); /* Opcional: aplicar filtro de escala de grises */
+    transition: filter 0.3s;
+}
+
+.sponsor-track img:hover {
+    filter: grayscale(0%); /* Volver a color al pasar el mouse */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Estilos para el contenedor de promociones */
+.promo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las promociones */
+    padding: 20px; /* Espacio interno para que el contenedor no esté pegado a otros elementos */
+    margin: 20px auto; /* Margen para separarlo de otros elementos */
+    max-width: 90%; /* Limita el ancho para que no ocupe toda la pantalla */
+    background-color: #ffffff; /* Fondo blanco para resaltar las promociones */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si el espacio es limitado */
+}
+
+.promo-item {
+    width: calc(50% - 15px); /* Ajusta el ancho y agrega margen para que las imágenes no se toquen en pantallas grandes */
+    background-color: #f8f8f8; /* Fondo para resaltar cada promoción individualmente */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Espacio interno para que la imagen no esté tan cerca del borde */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+}
+
+.promo-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+.promo-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste responsivo para móviles */
+@media (max-width: 768px) {
+    .promo-item {
+        width: 100%; /* En dispositivos móviles, cada imagen de promoción ocupará todo el ancho */
+        margin-bottom: 20px; /* Espacio entre las imágenes en vista móvil */
+    }
+}
+
+.user-popup {
+    position: absolute;
+    top: 60px; /* Ajusta la posición */
+    right: 20px; /* Ajusta la posición */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.user-popup p {
+    margin: 0;
+    padding: 5px 0;
+    color: #333;
+}
+
+.user-popup button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-popup button:hover {
+    background-color: #c0392b;
+}
+
+/* Botón de cerrar sesión como ícono */
+.logout-icon-btn {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: #05696B; /* Mismo color que los otros íconos */
+    font-size: 1.5em; /* Tamaño igual al de los otros íconos */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Sin padding adicional */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.logout-icon-btn:hover {
+    color: #00ffcc; /* Mismo color de hover */
+    transform: scale(1.1); /* Zoom similar al hover de los otros íconos */
+}

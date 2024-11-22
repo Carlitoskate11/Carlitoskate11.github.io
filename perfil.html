@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Usuario</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Perfil del Usuario</h1>
+        <div class="profile-info">
+            <p><strong>Nombre:</strong> <span id="user-name">Cargando...</span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="user-email">Cargando...</span></p>
+        </div>
+        <button class="logout-btn" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <script>
+        // Cargar la información del usuario desde localStorage
+        document.addEventListener("DOMContentLoaded", function() {
+            const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+            if (usuarioActual) {
+                document.getElementById("user-name").innerText = usuarioActual.usuario;
+                document.getElementById("user-email").innerText = usuarioActual.correo;
+            } else {
+                // Si no hay sesión, redirige a la página de inicio de sesión
+                window.location.href = "registro.html";
+            }
+        });
+
+        // Función para cerrar sesión
+        function cerrarSesion() {
+            localStorage.removeItem("usuarioActual");
+            window.location.href = "registro.html"; // Redirige al login
+        }
+    </script>
+</body>
+</html>

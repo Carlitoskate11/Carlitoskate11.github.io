@@ -1,0 +1,384 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor Principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Contenedor de Envío */
+.envio-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.envio-container:hover {
+    transform: scale(1.02);
+}
+
+.titulo-envio {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #002366;
+    margin-bottom: 10px;
+    animation: rgb-text 6s infinite;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Método de Envío */
+.shipping-methods {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.method {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.method:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.method.selected {
+    border-color: #007bff;
+    background-color: #e6f2ff;
+    animation: pulse 1.5s infinite;
+}
+
+.method i {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.8em; 
+}
+
+.method h3 {
+    font-size: 1.1em;
+    color: #002366;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.method p {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Media Query para Tablets y Dispositivos Pequeños */
+@media (min-width: 576px) {
+    .shipping-methods {
+        flex-wrap: nowrap; /* Permite que se muestren en línea en pantallas más grandes */
+    }
+
+    .method {
+        flex: 1; /* Ajuste para pantallas mayores a 576px */
+        max-width: 30%; /* Cada método toma un tercio del ancho en pantallas grandes */
+    }
+}
+
+/* Animaciones */
+@keyframes rgb-text {
+    0% { color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Tabla de Resumen del Pedido */
+.order-summary {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Botones de Navegación */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.back {
+    background-color: #333;
+    color: #fff;
+}
+
+button.complete {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Modal de Compra */
+.modal-compra {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.modal-content h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-close-btn, .close-btn, .modal-complete-btn, .modal-home-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.modal-close-btn:hover, .close-btn:hover, .modal-complete-btn:hover, .modal-home-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animación de Desvanecimiento */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Encabezado con Fondo Degradado y Animación */
+.custom-nav {
+    background: linear-gradient(45deg, #05696B, #00ffcc, #05696B);
+    background-size: 200% 200%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #00ffcc;
+    animation: gradientBackground 15s ease infinite;
+}
+
+.custom-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.custom-nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.custom-nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-nav ul li a:hover {
+    background-color: #00ffcc;
+    color: #05696B;
+}
+
+/* Pie de Página con Fondo Degradado y Animación */
+footer {
+    background: linear-gradient(45deg, #05696B, #00ffcc, #05696B);
+    background-size: 200% 200%;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid #00ffcc;
+    animation: gradientBackground 15s ease infinite;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Animación de Fondo Degradado */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Botones Flotantes de Redes Sociales */
+.btn-wsp, .btn-tiktok, .btn-facebook {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.4s ease;
+    animation: pulse 2s infinite;
+}
+
+/* Redes sociales - Efecto hover */
+.btn-wsp:hover, .btn-tiktok:hover, .btn-facebook:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-wsp {
+    background: #0df053;
+    bottom: 60px;
+    animation: rotateWsp 5s infinite;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-tiktok {
+    background: #010101;
+    bottom: 130px;
+    animation: rotateTiktok 5s infinite;
+}
+
+.btn-tiktok:hover {
+    text-decoration: none;
+    color: #ff0050;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-facebook {
+    background: #3b5998;
+    bottom: 200px;
+    animation: rotateFb 5s infinite;
+}
+
+.btn-facebook:hover {
+    text-decoration: none;
+    color: #3b5998;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* Animación de Efecto de Pulso para Botones */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes rotateWsp {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rotateTiktok {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rotateFb {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}

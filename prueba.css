@@ -1,0 +1,21 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    background-color: #05696B;
+    color: white;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: #05696B;
+    color: white;
+}
+
+.btn-primary, .btn-danger {
+    margin-right: 10px;
+}

@@ -1,0 +1,592 @@
+[
+    {
+        "id": 1,
+        "nombre": "MOUSE AGILER AGI-2100",
+        "precio": "80.00",
+        "imagen": "imagen/mouse/Agiler.png", 
+        "categoria": "MOUSE",
+        "descripcion": "Explora lo último en innovación con dispositivos que combinan potencia y diseño, desde laptops ultraligeras hasta impresoras de alta precisión, todos diseñados para optimizar tu productividad y creatividad."
+    },   
+    {
+        "id": 20,
+        "nombre": "MOUSE IMICE A9",
+        "precio": "85.00",
+        "imagen": "imagen/mouse/IMICEA9.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 21,
+        "nombre": "MOUSE IMICE E-1800",
+        "precio": "90.00",
+        "imagen": "imagen/mouse/IMICEE1800.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 22,
+        "nombre": "MOUSE IMICE T80 GAMER",
+        "precio": "120.00",
+        "imagen": "imagen/mouse/IMICET80.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 23,
+        "nombre": "MOUSE IMICE X5",
+        "precio": "90.00",
+        "imagen": "imagen/mouse/IMICEX5.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 25,
+        "nombre": "MOUSE INALAMBRICO E-1900",
+        "precio": "90.00",
+        "imagen": "imagen/mouse/IMICEE1900.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 28,
+        "nombre": "MOUSE INALAMBRICO XTM300",
+        "precio": "75.00",
+        "imagen": "imagen/mouse/XTM300.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 35,
+        "nombre": "MOUSE XTECH 195 OPTICO",
+        "precio": "25.00",
+        "imagen": "imagen/mouse/XTECHXTM195.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 36,
+        "nombre": "MOUSE INALAMBRICO XTECH XTM310 GALOS",
+        "precio": "75.00",
+        "imagen": "imagen/mouse/XTECHXTM310.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 37,
+        "nombre": "MOUSE WIRELESS IMICE RECARGABLE",
+        "precio": "115.00",
+        "imagen": "imagen/mouse/IMICERECARGABLE.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 39,
+        "nombre": "MOUSE CAPITAN AMERICA XTECH",
+        "precio": "99.00",
+        "imagen": "imagen/mouse/CAPITANAMERICA.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 40,
+        "nombre": "MOUSE GAMER VIPER V551",
+        "precio": "195.00",
+        "imagen": "imagen/mouse/VIPERV551.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 41,
+        "nombre": "MOUSE GAMER VIPER V570",
+        "precio": "245.00",
+        "imagen": "imagen/mouse/VIPERV570.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 42,
+        "nombre": "MOUSE IMICE E-2330",
+        "precio": "85.00",
+        "imagen": "imagen/mouse/IMICEE2330.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 43,
+        "nombre": "MOUSE IMICE A7 GAMING",
+        "precio": "85.00",
+        "imagen": "imagen/mouse/IMICEA7.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 44,
+        "nombre": "MOUSE INALAMBRICO 1HORA",
+        "precio": "60.00",
+        "imagen": "imagen/mouse/1HORA.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 45,
+        "nombre": "MOUSE INALAMBRICO FOREV FV-198",
+        "precio": "85.00",
+        "imagen": "imagen/mouse/FOREVFV198.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 46,
+        "nombre": "MOUSE INALAMBRICO KLIP XTREME SLIM SURFER",
+        "precio": "75.00",
+        "imagen": "imagen/mouse/XKLIPXTREMESLIME.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 47,
+        "nombre": "MOUSE INALAMBRICO IMICE G-1600",
+        "precio": "85.00",
+        "imagen": "imagen/mouse/IMICEG1600.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 48,
+        "nombre": "MOUSE LOGITECH G203 'NEGRO'",
+        "precio": "450.00",
+        "imagen": "imagen/mouse/LOGITECHG203.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 50,
+        "nombre": "MOUSE MEETION INALAMBRICO R570 'NEGRO'",
+        "precio": "75.00",
+        "imagen": "imagen/mouse/MEETIONR570",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 51,
+        "nombre": "MOUSE MINNIE INALAMBRICO XTECH",
+        "precio": "99.00",
+        "imagen": "imagen/mouse/MINNIE.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 52,
+        "nombre": "MOUSE OPTICAL PREMIUM ETOUCH",
+        "precio": "35.00",
+        "imagen": "imagen/mouse/OPTICALPREMIUM.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 53,
+        "nombre": "MOUSE PANTERA NEGRA XTECH",
+        "precio": "99.00",
+        "imagen": "imagen/mouse/PANTERANEGRA.PNG",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+    {
+        "id": 54,
+        "nombre": "MOUSE PRINCESA DISNEY XTECH",
+        "precio": "99.00",
+        "imagen": "imagen/mouse/PRINCESADISNEY.png",
+        "categoria": "MOUSE",
+        "descripcion": ""
+    },
+
+    
+
+
+
+    {
+      "id": 93,
+      "nombre": "TECLADO GAMER IMICE AK-800",
+      "precio": "160.00",
+      "imagen": "imagen/tecla/AK-800.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado gamer con iluminación RGB y teclas mecánicas para un rendimiento preciso."
+  },
+  {
+      "id": 94,
+      "nombre": "TECLADO GAMER IMICE AK-600",
+      "precio": "150.00",
+      "imagen": "imagen/tecla/AK-600.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado gamer compacto con retroiluminación ajustable y diseño ergonómico."
+  },
+  {
+      "id": 95,
+      "nombre": "TECLADO GAMER CMK-188",
+      "precio": "175.00",
+      "imagen": "imagen/tecla/4323_medium.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado para gaming con teclas multimedia y luz LED personalizable."
+  },
+  {
+      "id": 97,
+      "nombre": "TECLADO FOREV FV-500",
+      "precio": "120.00",
+      "imagen": "imagen/tecla/forev.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado duradero con retroiluminación sutil y teclas silenciosas."
+  },
+  {
+      "id": 98,
+      "nombre": "TECLADO + MOUSE ARGOM",
+      "precio": "200.00",
+      "imagen": "imagen/tecla/argom.png",
+      "categoria": "TECLADO",
+      "descripcion": "Combo de teclado y mouse inalámbricos con diseño compacto y funcionalidad avanzada."
+  },
+  {
+      "id": 102,
+      "nombre": "TECLADO ALAMBRICO DELL",
+      "precio": "110.00",
+      "imagen": "imagen/tecla/dell.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado estándar Dell con conexión por cable y teclas cómodas."
+  },
+  {
+      "id": 104,
+      "nombre": "TECLADO + MOUSE GAMING ETOUCH FIGHTER",
+      "precio": "250.00",
+      "imagen": "imagen/tecla/fighter.png",
+      "categoria": "TECLADO",
+      "descripcion": "Combo gaming con teclado iluminado y mouse de alta precisión."
+  },
+  {
+      "id": 108,
+      "nombre": "COMBO TECLADO INALAMBRICO T-WOLF",
+      "precio": "300.00",
+      "imagen": "imagen/tecla/twolfcombo.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado inalámbrico con diseño moderno y conexión rápida."
+  },
+  {
+      "id": 112,
+      "nombre": "TECLADO RAZER CYNOSA LITE",
+      "precio": "350.00",
+      "imagen": "imagen/tecla/razer.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado gaming con retroiluminación Chroma y diseño resistente."
+  },
+  {
+      "id": 113,
+      "nombre": "TECLADO MEETION INALAMBRICO WK841",
+      "precio": "280.00",
+      "imagen": "imagen/tecla/meetion.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado inalámbrico Meetion con teclas ergonómicas y diseño elegante."
+  },
+  {
+      "id": 114,
+      "nombre": "TECLADO T-WOLF FT200",
+      "precio": "180.00",
+      "imagen": "imagen/tecla/twolfft200.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado gamer T-WOLF con iluminación LED y estructura duradera."
+  },
+  {
+      "id": 118,
+      "nombre": "TECLADO INALAMBRICO LOGITECH",
+      "precio": "270.00",
+      "imagen": "imagen/tecla/logitech.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado inalámbrico Logitech con conexión estable y diseño compacto."
+  },
+  {
+      "id": 120,
+      "nombre": "TECLADO GAMER AZERO 26",
+      "precio": "200.00",
+      "imagen": "imagen/tecla/azero.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado gaming con retroiluminación RGB y teclas silenciosas."
+  },
+  {
+      "id": 123,
+      "nombre": "TECLADO LOGITECH CORDLESS INALAMBRICO",
+      "precio": "260.00",
+      "imagen": "imagen/tecla/cordles.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado inalámbrico Logitech con conectividad confiable y teclas cómodas."
+  },
+  {
+      "id": 126,
+      "nombre": "TECLADO IMICE K816",
+      "precio": "210.00",
+      "imagen": "imagen/tecla/imice.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado con diseño minimalista, ideal para uso en oficinas y gaming casual."
+  },
+  {
+      "id": 128,
+      "nombre": "TECLADO HP K500F",
+      "precio": "230.00",
+      "imagen": "imagen/tecla/hp.png",
+      "categoria": "TECLADO",
+      "descripcion": "Teclado HP con retroiluminación y diseño resistente para usuarios exigentes."
+  },
+
+
+
+
+
+
+    {
+      "id": 285, 
+      "nombre": "UNIDAD NVMe KINGSTON SSD 1TB",
+      "precio": "769.00",
+      "imagen": "imagen/Productos/1tb.jpeg",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "Unidad NVMe Kingston SSD de 1TB, diseñada para un almacenamiento ultrarrápido y eficiente. Perfecta para optimizar el rendimiento de sistemas y aplicaciones."
+  },
+  {
+      "id": 286, 
+      "nombre": "UNIDAD NVMe PATRIOT P300 256GB",
+      "precio": "275.00",
+      "imagen": "imagen/Productos/256gb.jpg",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "NVMe Patriot P300 con capacidad de 256GB. Proporciona una velocidad excepcional para almacenamiento de datos en dispositivos modernos."
+  },
+  {
+      "id": 287, 
+      "nombre": "UNIDAD NVMe PATRIOT P300 512GB",
+      "precio": "395.00",
+      "imagen": "imagen/Productos/512gb.webp",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "Unidad NVMe Patriot P300 de 512GB, ideal para usuarios que buscan mayor capacidad y velocidad en sus sistemas de almacenamiento."
+  },
+  {
+      "id": 288, 
+      "nombre": "KINGSTON 240GB SSD",
+      "precio": "325.00",
+      "imagen": "imagen/Productos/kingston240gb.png",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "SSD Kingston de 240GB. Diseñado para mejorar la velocidad y fiabilidad en equipos con un rendimiento de almacenamiento sólido."
+  },
+  {
+      "id": 289, 
+      "nombre": "KINGSTON 480GB SSD",
+      "precio": "410.00",
+      "imagen": "imagen/Productos/kingston240gb.png",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "SSD Kingston de 480GB, una solución de almacenamiento confiable con alta capacidad y tiempos de carga mejorados."
+  },
+  {
+      "id": 290, 
+      "nombre": "PATRIOT 256GB SSD",
+      "precio": "265.00",
+      "imagen": "imagen/Productos/patriot256gb.png",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "SSD Patriot de 256GB, una unidad compacta y rápida para una experiencia de almacenamiento mejorada y eficiente."
+  },
+  {
+      "id": 291, 
+      "nombre": "PATRIOT 512GB SSD",
+      "precio": "395.00",
+      "imagen": "imagen/Productos/patriot512gb.png",
+      "categoria": "ALMACENAMIENTO",
+      "descripcion": "SSD Patriot de 512GB, perfecto para quienes necesitan un almacenamiento balanceado entre capacidad, rendimiento y velocidad."
+  },
+
+
+
+
+
+
+  {
+    "id": 292, 
+    "nombre": "KINGSTON DDR4 16GB",
+    "precio": "420.00",
+    "imagen": "imagen/Productos/16gb.jpg",
+    "categoria": "MEMORIA RAM",
+    "descripcion": "Memoria RAM Kingston DDR4 de 16GB. Diseñada para mejorar el rendimiento de tu computadora, ideal para multitarea y aplicaciones exigentes."
+},
+{
+    "id": 293, 
+    "nombre": "KINGSTON FURY DDR4 8GB",
+    "precio": "325.00",
+    "imagen": "imagen/Productos/fury.jpg",
+    "categoria": "MEMORIA RAM",
+    "descripcion": "Memoria RAM Kingston Fury DDR4 de 8GB. Perfecta para gaming y tareas de alto rendimiento con una velocidad excepcional."
+},
+{
+    "id": 294, 
+    "nombre": "KINGSTON FURY DDR4 16GB",
+    "precio": "450.00",
+    "imagen": "imagen/Productos/fury.jpg",
+    "categoria": "MEMORIA RAM",
+    "descripcion": "Kingston Fury DDR4 de 16GB, ideal para gamers y usuarios avanzados que necesitan velocidad y eficiencia en sus equipos."
+},
+
+
+
+
+
+    {
+      "id": 295, 
+      "nombre": "USB KINGSTON EXODIA KYSON 32GB",
+      "precio": "70.00",
+      "imagen": "imagen/Productos/kyson32gb.png",
+      "categoria": "MEMORIAS USB",
+      "descripcion": "Memoria USB Kingston Exodia Kyson con capacidad de 32GB. Ideal para almacenamiento y transferencia rápida de datos con un diseño duradero y elegante."
+  },
+  {
+      "id": 296, 
+      "nombre": "USB KINGSTON EXODIA ONYX 64GB",
+      "precio": "60.00",
+      "imagen": "imagen/Productos/exodiaonyx64gb.png",
+      "categoria": "MEMORIAS USB",
+      "descripcion": "USB Kingston Exodia Onyx con capacidad de 64GB. Compacta y confiable, perfecta para llevar tus archivos importantes a cualquier lugar."
+  },
+  {
+      "id": 297, 
+      "nombre": "USB KINGSTON EXODIA M 128GB",
+      "precio": "100.00",
+      "imagen": "imagen/Productos/Exodia64gbwith.png",
+      "categoria": "MEMORIAS USB",
+      "descripcion": "USB Kingston Exodia M con 128GB de capacidad. Almacena grandes volúmenes de datos con velocidad y estilo en un diseño moderno y resistente."
+  },
+  {
+      "id": 298, 
+      "nombre": "USB KINGSTON EXODIA 64GB 'NEGRO'",
+      "precio": "60.00",
+      "imagen": "imagen/Productos/exodia64gb.png",
+      "categoria": "MEMORIAS USB",
+      "descripcion": "Memoria USB Kingston Exodia de 64GB en color negro. Perfecta para transferencias rápidas de datos con un diseño minimalista y práctico."
+  },
+
+
+
+
+
+
+    {
+      "id": 311, 
+      "nombre": "SOPORTE AJUSTABLE PARA LAPTOP",
+      "precio": "150.00",
+      "imagen": "imagen/Soporte/soporte.jpg",
+      "categoria": "COOLERS",
+      "descripcion": "Soporte ajustable diseñado para mejorar la ergonomía de tu espacio de trabajo y reducir el calor generado por tu laptop."
+  },
+  {
+      "id": 312, 
+      "nombre": "BASE DE ENFRIAMIENTO MEETION CP2020 PARA LAPTOP",
+      "precio": "200.00",
+      "imagen": "imagen/Productos/meetioncp2020.png",
+      "categoria": "COOLERS",
+      "descripcion": "Base de enfriamiento silenciosa y eficiente con iluminación LED, ideal para largas jornadas de trabajo o gaming."
+  },
+  {
+      "id": 313, 
+      "nombre": "BASE DE ENFRIAMIENTO GAMING ETOUCH K24+",
+      "precio": "250.00",
+      "imagen": "imagen/Productos/etouchk24.png",
+      "categoria": "COOLERS",
+      "descripcion": "Diseño gaming con ventiladores potentes y bajo nivel de ruido para mantener tu laptop fresca durante intensas sesiones de uso."
+  },
+  {
+      "id": 314, 
+      "nombre": "BASE DE ENFRIAMIENTO COOLCOLD ICE PARA LAPTOP",
+      "precio": "120.00",
+      "imagen": "imagen/Productos/coolcoldk16.png",
+      "categoria": "COOLERS",
+      "descripcion": "Base compacta con diseño moderno y ventilación eficiente, perfecta para laptops de hasta 17 pulgadas."
+  },
+  {
+      "id": 315, 
+      "nombre": "BASE DE ENFRIAMIENTO GAMING ETOUCH K25+",
+      "precio": "280.00",
+      "imagen": "imagen/Productos/etouchk25.png",
+      "categoria": "COOLERS",
+      "descripcion": "Base de enfriamiento avanzada con múltiples niveles de inclinación y ventiladores RGB para una experiencia completa de gaming."
+  },
+  {
+    "id": 586,
+    "nombre": "Computadora de Escritorio DELL",
+    "categoria": "Computadoras de Escritorio",
+    "imagen": "imagen/equipos/DELLL.png",
+    "descripcion": "Potente computadora de escritorio DELL equipada con procesador Intel Core i5 de 10ª generación, 16GB de RAM DDR4 y un SSD de 512GB para almacenamiento ultrarrápido. Ideal para trabajos de oficina y aplicaciones de alto rendimiento. Incluye Windows 11 Pro y conectividad avanzada con puertos USB-C, HDMI y Wi-Fi 6.",
+    "precio": "3,500.00"
+},
+{
+    "id": 589,
+    "nombre": "Computadora de Escritorio HP I5",
+    "categoria": "Computadoras de Escritorio",
+    "imagen": "imagen/equipos/HP1.png",
+    "descripcion": "Computadora de escritorio HP diseñada para diseño gráfico y edición multimedia. Cuenta con un procesador Intel Core i5 de 12ª generación, tarjeta gráfica dedicada NVIDIA GTX 1650, 16GB de RAM y un SSD de 1TB. Perfecta para tareas exigentes con rendimiento optimizado y diseño elegante.",
+    "precio": "4,200.00"
+},
+{
+    "id": 590,
+    "nombre": "Computadora de Escritorio HP I3",
+    "categoria": "Computadoras de Escritorio",
+    "imagen": "imagen/equipos/HP2.png",
+    "descripcion": "PC de escritorio HP ideal para trabajos de oficina y estudio. Integra un procesador Intel Core i3 de 11ª generación, 8GB de RAM y un SSD de 256GB para almacenamiento eficiente. Incluye un diseño compacto, puertos USB 3.0 y compatibilidad con pantallas 4K.",
+    "precio": "3,000.00"
+},
+{
+    "id": 591,
+    "nombre": "Computadora de Escritorio HP I7",
+    "categoria": "Computadoras de Escritorio",
+    "imagen": "imagen/equipos/HP3.png",
+    "descripcion": "Computadora HP de alto rendimiento con procesador Intel Core i7 de 12ª generación, 32GB de RAM DDR4 y un SSD de 1TB combinado con un disco duro de 2TB para un amplio almacenamiento. Incluye tarjeta gráfica NVIDIA RTX 3060, ideal para gaming y aplicaciones profesionales, como modelado 3D y edición de video.",
+    "precio": "3,700.00"
+},
+    {
+        "id": 587,
+        "nombre": "Laptop HP victus",
+        "categoria": "Laptops",
+        "imagen": "imagen/equipos/victus1.png",
+        "descripcion": "Laptop ligera y versátil",
+        "precio": "7,000.00"
+    },
+    {
+        "id": 593,
+        "nombre": "Laptop HP probook",
+        "categoria": "Laptops",
+        "imagen": "imagen/equipos/hp11.png",
+        "descripcion": "Laptop ideal para estudiantes",
+        "precio": "2,500.00"
+    },
+    {
+        "id": 594,
+        "nombre": "Laptop HP probook",
+        "categoria": "Laptops",
+        "imagen": "imagen/equipos/hp22.png",
+        "descripcion": "Laptop profesional de alto rendimiento",
+        "precio": "3,300.00"
+    },
+    {
+        "id": 595,
+        "nombre": "Laptop DELL E5540",
+        "categoria": "Laptops",
+        "imagen": "imagen/equipos/dell.png",
+        "descripcion": "Laptop compacta con gran autonomía",
+        "precio": "2,200.00"
+    },
+    {
+        "id": 588,
+        "nombre": "Impresora CANON G2120",
+        "categoria": "Impresoras",
+        "imagen": "imagen/Aparatos/G21101.png",
+        "descripcion": "Impresora multifuncional con sistema de tinta recargable para un costo de impresión bajo. Ideal para imprimir documentos y fotos con alta calidad y nitidez. Capacidad de hasta 6,000 páginas en negro y 7,000 en color. Compacta y fácil de usar.",
+        "precio": "1,650.00"
+    },
+    {
+        "id": 597,
+        "nombre": "Impresora EPSON L3250",
+        "categoria": "Impresoras",
+        "imagen": "imagen/Aparatos/L3250.png",
+        "descripcion": "Impresora Wi-Fi multifuncional con tanque de tinta de alta capacidad, ideal para impresiones económicas y ecológicas. Compatible con dispositivos móviles y capaz de imprimir hasta 4,500 páginas en negro y 7,500 en color.",
+        "precio": "1,950.00"
+    }
+] 
+
+  
